@@ -1,0 +1,627 @@
+/* reset browser styles */
+html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp,small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	vertical-align: baseline;
+}
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1.2;
+}
+ol { 
+	padding-left: 1.4em;
+	list-style: decimal;
+}
+ul {
+	padding-left: 1.4em;
+	list-style: square;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+} 
+/* end reset browser styles */
+
+/*Box-sizing property*/
+*{
+	box-sizing: border-box;
+}
+
+@font-face{
+	font-family:mixofx;
+	src:url("../fonts/mixofx_azonix/Azonix.otf");
+}
+
+#wrapper{
+	width:968px;
+
+}
+
+body{
+	background-color:#2C2932;/*greyish-black*/
+	color: white;
+	font-family: 'Michroma',  sans-serif; /*Fallback fonts*/
+	max-width: 960px;
+	margin:0px auto 0px auto;
+
+}
+
+header{
+	position: fixed;
+	top:0;
+	height: 80px;
+	width:964px;
+	border: 2px #25EC5A solid;/*Green*/
+	border-style: none none solid none;
+	box-shadow: 0px 2px 10px #25EC5A;
+	color: white;
+	background-color: black;
+	font-family: mixofx;
+	z-index: 3;
+}
+
+html{
+	scroll-behavior: smooth;
+	/*background-image: linear-gradient(to bottom right, blue, green, white);*/
+
+}main{
+	position: relative;
+	margin-top: 150px;
+	width:964px;
+}
+
+/*Drop down menu section*/
+.drop-down{
+	position: absolute;
+	width:200px;
+	background-color:white;
+	border:2px solid blue;
+	border-radius: 5px;
+	height:25px;
+	margin:10px 5px 0px 0px;
+	right:0;
+	padding:2px;
+}
+
+.drop-down span{
+	color:black;
+	margin-left:70px;
+}
+
+.drop-down-menu{
+	display:none;
+	position: absolute;
+	margin-left: -25px;
+}
+
+.drop-down-menu li{
+	width:200px;
+	height:25px;
+	margin-top: 3px;
+	border:1px solid blue;
+	background-color: black;
+	border-radius: 5px;
+	list-style-type: none;
+	padding-top:5px;
+	text-align: center;
+}
+
+.drop-down-menu li:hover {
+	background-color: green;
+}
+
+.drop-down-menu li a {
+	text-decoration: none;
+	color: white;
+}
+
+.drop-down:hover .drop-down-menu{
+	display: block;
+}
+
+
+.drop-down:hover{
+	border-radius: 5px;
+}
+
+
+#logo-icon{
+	position: absolute;
+	border: 1px #25EC5A solid;
+	height: 65px;
+	float: left;
+	margin-left: 10px;
+	margin-top: 5px;
+	margin-left: 80px;
+	box-shadow: 0px 2px 15px #25EC5A;
+}
+
+#logo-icon-two{
+	position: absolute;
+	border: 1px #25EC5A solid;
+	height: 65px;
+	right:0;
+	margin-right: 10px;
+	margin-top: 5px;
+	margin-right: 80px;
+	box-shadow: 0px 2px 15px #25EC5A;
+}
+
+
+.title {
+	position: absolute;
+	margin-top: 20px;
+	margin-left: 250px;
+}
+
+.title h1{
+	font-size: 2.5em;
+	text-shadow:0px 2px 15px #25EC5A; 
+}
+
+/*COMPUTER CONSOLE*/
+.console-white-bar{
+	display: inline-block;
+	height: 24px;
+	width: 100%;
+	background-color: white;
+}
+
+.console-white-bar p {
+	color:black;
+	font-weight: bold;
+	width:200px;
+	margin-left:35px;
+	margin-top: 2px;
+}
+
+.console-white-bar img{
+	position: absolute;
+	top:0;
+	width:26px;
+	height:26px;
+	margin-left: 5px;
+}
+
+.console-screen{
+	position: fixed;
+	width: 600px;
+	height: 330px;
+	background-color: black;
+	margin:160px 0px 150px 180px;
+	border:1px solid blue;	
+}
+
+.console-screen p{
+	text-align: center;
+}
+
+.cmp-prompt-text{
+	position: absolute;
+	color:#25EC5A;
+	font-size: 14px;
+	margin-top: 10px;
+	margin-left: 10px;
+}
+
+.welcome-text{
+	text-align: center;
+	margin-top: 55px;
+	font-size: 1.7em;
+	color:#25EC5A;
+	font-family:mixofx;
+}
+
+.find-out{
+	font-size: 14px;
+	margin-top: 10px;
+	color:#25EC5A;
+}
+
+.enter-button{
+	position: absolute;
+	text-decoration: none;
+	text-align: center;
+	padding: 5px;
+	background-color: black;
+	color:white;
+	font-size: 1.5em;
+	width:200px;
+	height:50px;
+	margin:70px 0px 0px 200px;
+	border:2px solid white;
+}
+.enter-button:hover{
+	color:white;
+	border-color: #25EC5A;
+	box-shadow: 0px 2px 8px #25EC5A; 
+}
+
+.social-media-icons{
+	width:40px;
+	height:40px;
+	margin:6px 5px 0px 2px;
+	box-shadow: 0px 2px 12px #00BFFF;
+	border-radius: 10px; 
+	transition: width 0.5s, height 0.5s, border-radius 0.5s;
+}
+
+.social-media-icons:hover{
+	width:50px;
+	height: 50px;
+	border:4px solid #25EC5A;
+	border-radius: 10px; 
+
+}
+
+.social-media-icon-div{
+	position: absolute;
+	width:400px;
+	margin:0px 0px 0px 25px;
+}
+
+img.exit-icon{
+	height:27px;
+	width:27px;
+	background-color:white;
+	padding:5px;
+	position: absolute;
+	right:0;
+	top:0;
+}
+
+.check-us-out{
+	position: absolute;
+	width:200px;
+	height:25px;
+	background-color: black;
+	border:1px solid #25EC5A ;
+	border-bottom-style: none;
+	border-radius: 2px;
+	margin-top: -27px;
+}
+.check-us-out p{
+	padding:1px 0 0 12px;
+}
+
+/*Contact info section*/
+.contact-copyright{
+	width:340px;
+	height:40px;
+	padding:9px;
+	border-radius:2px;
+	background-color: black;
+	float: right;
+	font-size: 14px
+
+}
+
+footer{
+	position: fixed;
+	height:60px;
+	width:964px;
+	bottom:0;
+	margin-top: 50px;
+	border: 2px #25EC5A solid;/*Green*/
+	border-style: solid none none none;
+	box-shadow: 0px 2px 10px #25EC5A;
+	background-image: url("../images/binary_code.jpg");
+	z-index: 3;
+}
+
+/*** Welcome Page content ***/
+div.content-box{
+	position: relative;
+	width:700px;
+	height: 250px;
+	margin:40px 0px;
+	border:1px solid blue;
+	margin-left:auto;
+	margin-right: auto;
+	z-index: 1;
+	background-color: black;
+	padding-top:20px;
+}
+
+
+.custom-title-header{
+	padding:1px 0px 0px 0px;
+	position: absolute;
+	margin-top: -47px;
+	width:200px;
+	height:25px;
+	text-align: center;
+	border:1px solid #25EC5A; 	
+	border-radius: 2px;
+	background: black;
+}
+
+.text-wrap{
+	width:550px;
+	padding:5px 0px;
+	line-height: 1.5;
+	margin:10px auto 0px auto;
+}
+
+img.lock-icon {
+	position: absolute;
+	width:100px;
+	height:100px;
+	margin-right:50px;
+	margin-bottom:10px;
+	right:0;
+	bottom:0;
+}
+.hacker-vid-wrapper{
+	width:660px;
+	height:215px;
+	margin-right: 20px;
+	float:right;
+	z-index: 2;
+}
+
+
+/*Link to top of page*/
+span.top-page-link{
+	background-color: black;
+	padding:5px;
+	border: 1px solid white;
+	margin-left: 410px;
+}
+
+
+.top-page-link a{
+	color:white;
+	text-decoration: none;
+}
+
+.top-page-link, a:hover{
+	color:#25EC5A;
+	border-color:#25EC5A;
+}
+/*** END OF Welcome Page ***/
+
+.folder-whitebar{
+	position: absolute;
+	top:0;
+	margin-top: -25px;
+	width:200px;
+	height:25px;
+	background-color: white;
+	border:2px solid #25EC5A;
+}
+
+.folder-icon{
+	margin-top: -20px;
+	margin-left: -10px;
+	position: absolute;
+	height:60px;
+	width:60px;
+}
+
+
+/*** HackerTypes page Content ***/
+/*Hat div container*/
+.hat-types-div{
+	width:840px;
+	height:800px;
+	border:2px solid blue;
+	margin-right: auto;
+	margin-left:auto;
+	background-image: url("../images/Hacker_2.jpg");
+	background-position: center;
+	background-size:840px 800px;
+	padding:70px 40px 0px 40px;
+}
+
+.float-right{
+	float:right;
+}
+
+.float-left{
+	float:left;
+}
+
+.hat-image{
+	width:200px;
+	height:160px;
+	border:2px solid #25EC5A;
+	margin-bottom:70px;
+}
+
+.hat-description{
+	width:470px;
+	height:130px;
+	margin-top: 30px;
+	margin-bottom: 70px;
+	border:2px solid blue;
+	background-color: black;
+	overflow-y: scroll;
+}
+
+.hat-description p{
+	padding:10px 25px;
+	font-size:14px;
+	color:white;
+	line-height: 1.7em;
+	text-align: center;
+	text-align: justify;
+}
+
+/*Hat colour name*/
+.hat-colour-name{
+	position: absolute;
+	width: 200px;
+	height:30px;
+	border:2px solid #25EC5A;
+	background-color: black;
+	margin-top: -30px;
+}
+
+
+.hat-colour-name h1{
+	color:white;
+	text-align: center;
+	padding-top: 2px;
+}
+
+/*White-folder-bg & folder icon*/
+.white-folder{
+	position: absolute;
+	margin-top: -105px;
+	margin-left: 60px;
+	width:200px;
+	height:32px;
+	left:0;
+	border-radius: 5px;
+	border:1px solid blue;
+	background-color: white;
+}
+
+.white-folder p{
+	position: absolute;
+	color:black;
+	padding-left: 55px;
+	padding-top: 4px;
+}
+
+.folder-icon{
+	position: absolute;
+	margin-top: -25px;
+	margin-left: -18px;
+	height:80px;
+	width:95px;
+}
+/* END OF HackerTypes page content */
+
+
+/*** Famous Hackers Page Conetent ***/
+.famous-hacker-div{
+	width:840px;
+	border:2px solid #0040FF; /*blue*/
+	background-image: linear-gradient(#1E90FF,#2E8B57,#1E90FF);
+	margin-left:auto;
+	margin-right: auto;
+	margin-bottom: 70px;
+	background-position: center;
+	padding:40px 40px 20px 40px;
+	overflow-y: scroll;
+
+}
+
+.hacker-img{
+	width:180px;
+	height:160px;
+	margin-bottom: 30px;
+	border:2px solid #25EC5A;
+}
+
+.hacker-description-div{
+	width:470px;
+	height: 128px;
+	margin-top: 30px;
+	border:2px solid #0040FF;/*blue*/
+	background-color: black;
+	overflow-y: scroll;
+}
+
+.hacker-description-div > p{
+	padding:10px 25px;
+	font-size:14px;
+	color:white;
+	line-height: 1.7em;
+	text-align: justify;
+}
+
+.white-folder-2{
+	position: absolute;
+	top:0;
+	margin-left: -40px;
+	margin-top: -32px;
+	width:300px;
+	height:32px;
+	border-radius: 5px;
+	border:1px solid blue;
+	background-color: white;
+}
+
+.white-folder-2 p{
+	position: absolute;
+	color:black;
+	padding:5px 0px 0px 60px;
+}
+
+/*Hacker name*/
+.hacker-name{
+	position: absolute;
+	width: 200px;
+	height:30px;
+	border:2px solid #25EC5A;
+	background-color: black;
+	margin-top: -30px;
+}
+
+.hacker-name h1{
+	padding-top: 2px;
+	text-align:center;
+}
+
+
+.more-info{
+	font-size:15px;
+	margin-left:300px;
+
+}
+
+.more-info a{
+	text-decoration-line: none;
+}
+
+/*Pseudo classes for links*/
+.more-info a:link{
+	color:red;
+}
+
+.more-info a:visited{
+	color:blue;
+}
+
+.more-info a:hover{
+	color:yellow;
+}
+
+.more-info a:active{
+	color:green;
+}
+
+#feedback-box{
+    display: block;
+    margin: 0px auto;
+    width:600px;height:360px;
+    border:1px solid white;
+    box-shadow: 0px 2px 10px white;
+    background-color: black;
+    text-align: center;
+}
+#feedback-box > p{
+    padding:120px 20px;
+}
+
+.feedback-title{
+    position: absolute;
+	width: 200px;
+	height:30px;
+	border:2px solid #25EC5A;
+	background-color: black;
+	margin-top: -32px;
+    margin-left:-1px;
+}
+
+/*** END OF Famous Hackers Page Content ***/
