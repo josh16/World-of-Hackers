@@ -204,11 +204,10 @@ html{
 }
 
 .cmp-prompt-text{
-	position: absolute;
-	color:#25EC5A;
+    display: block;
+    color:#25EC5A;
 	font-size: 14px;
-	margin-top: 10px;
-	margin-left: 10px;
+    padding-top: 20px;
 }
 
 .welcome-text{
